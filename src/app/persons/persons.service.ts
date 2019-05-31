@@ -1,7 +1,6 @@
 import { Injectable } from "@angular/core";
 import { Subject } from "rxjs/Subject";
-import { HttpModule } from "@angular/http";
-import { Http } from "@angular/http";
+import { HttpClient } from "@angular/common/http";
 
 
 // @Injectable({ providedIn: 'root' })
@@ -10,7 +9,7 @@ export class PersonsService {
   persons: string[] = [];
   httpClient: any;
 
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
   }
 
   fetchPersons() {

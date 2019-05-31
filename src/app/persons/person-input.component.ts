@@ -1,5 +1,4 @@
 import { Component, Output } from "@angular/core";
-import { EventEmitter } from "@angular/forms/src/facade/async";
 import { PersonsService } from "./persons.service";
 
 @Component({
